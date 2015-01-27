@@ -1,0 +1,33 @@
+.team--post {
+	h2.role {
+		margin-top: -.5em;
+		margin-bottom: 2em;
+		text-align: center;
+		font-size: 1.5em; 
+		text-transform: uppercase;
+		color: $color--red;
+	}
+	img.profile {
+		@include span-columns(4 of 12);
+		@include shift(4);
+	}
+	article {
+		@include span-columns(12);
+		margin-top: 2em;
+		> * {
+			margin-bottom: 1em;
+		}
+	}
+	a.email {
+		@include span-columns(4);
+        @include shift(4);
+        background: $color--red;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: .75em 1em;
+        margin-top:25px;
+        margin-bottom: 50px;
+        border-radius: 6px;
+	}
+}

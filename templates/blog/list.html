@@ -1,0 +1,27 @@
+{% extends "templates/partials/base.html" %}
+
+{% block title %}{% parent %} - Blog{% endblock %}
+
+{% block content %}
+
+  {% set data = cms.blog %}
+
+  {% set data = data|sort('publish_date', true) %}
+
+  <div class="blog--all">
+    <h1 class="title">Blog</h1>
+
+    <ul>
+      {% for object in data %}
+        <li>
+          <a href="{{ url(object) }}">
+            <img src="{{ object.title_image|imageSize(800) }}" />
+            <h1 class="name">{{ object.name }} </h1>
+            <h2 class="author">{{ object.author_name }}</h2>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+{% endblock %}

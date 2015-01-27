@@ -1,0 +1,47 @@
+$color--red: #E34F50;
+$color--red--dark: #B5393B;
+$color--blue: #7EC7E3;
+$color--yellow: #F9CD1D;
+$color--pink: #AD196F;
+$color--lightgrey: #F8F8F8;
+$color--darkgrey: RGBA(102, 117, 127, 1);
+$color--rs-brand: RGBA(0, 146, 221, 1);
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+}
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+@import "base";
+
+@import "partials/header";
+@import "partials/footer";
+
+@import "about";
+@import "start";
+@import "support";
+@import "hello";
+@import "contact";
+@import "jobs";
+
+@import "home";
+@import "home--featured-block";
+
+@import "schemes/festival";
+@import "schemes/hyperlocal";
+@import "schemes/everywhere";
+
+@import "blog/blog--all";
+@import "blog/blog--post";
+
+@import "team/team--post";
+
+@import "home-two.scss";

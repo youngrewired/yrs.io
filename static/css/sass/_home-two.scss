@@ -1,0 +1,249 @@
+.home-two {
+	.top {
+		width: 1088px;
+		margin: 0 auto;
+		background: white;
+		.left {
+			@include span-columns(6);
+			padding-top: 50px;
+			img {
+				@include span-columns(2 of 6);
+				@include clearfix;
+			}
+			h1 {
+				@include span-columns(4 of 6);
+				font-size: 1.5em;
+				color: $color--blue;
+				margin-top: 1em;
+				margin-bottom: 3em;
+			}
+			ul.buttons {
+				@include span-columns(6 of 6);
+				li {
+					list-style-type: none;
+					&:nth-child(1),
+					&:nth-child(2) {
+						@include span-columns(3 of 6);
+						@include omega(2n);
+						a {
+							display: block;
+							background: $color--red;
+							color: white;
+							text-align: center;
+							padding: .75em;
+							border-radius: 5px;
+							border: 1px solid $color--red;
+							font-weight: 600;
+							text-transform: uppercase;
+							@include transition;
+						}
+					}
+					&:nth-child(1) a:hover {
+						background: $color--red--dark;
+						@include transition;
+					}
+					&:nth-child(2) a {
+						background: white;
+						color: $color--red;
+						font-weight: 300;
+						&:hover {
+							@include transition;
+							border-color: $color--red--dark;
+							color: $color--red--dark;
+						}
+					}
+					&.email a {
+						@include span-columns(4 of 6);
+						margin-top: 1.5em;
+						color: $color--blue;
+						font-weight: 600;
+						&:after {
+							content: "￫";
+							margin-left: .5em;
+						}
+					}
+				}
+			}
+		}
+		.right {
+			@include span-columns(5);
+			@include shift(1);
+			@include omega;
+			padding-top: 50px;
+			ul.case-studies {
+				li {
+					list-style-type: none;
+					margin-bottom: 7.5px;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+		ul.bottom-nav {
+			@include span-columns(12);
+			margin-top: 3em;
+			li {
+				@include span-columns(3 of 12);
+				a {
+					color: black;
+					img {
+						width: 50px;
+						margin: 0 auto;
+						display: block;
+					}
+					span {
+						display: block;
+						text-align: center;
+						font-weight: 600;
+						margin-top: .5em;
+					}
+				}
+			}
+		}
+	}
+	.mailchimp {
+		@include span-columns(12);
+		margin-bottom: 3em;
+		margin-top: 6em;
+		h2 {
+			margin-bottom: 1em;
+			text-align: center;
+			width: 100%;
+			display: block;
+			float: left;
+		}
+		input {
+			padding: .75em;
+			border: 1px solid $color--red;
+			&[type=email] {
+				@include span-columns(8);
+				@include transition;
+				&:focus {
+					border-color: $color--red--dark;
+					@include transition;
+				}
+			}
+			&[type="submit"] {
+				@include span-columns(4);
+				margin-left: 2.35765%;
+				background: $color--red;
+				color: white;
+				@include transition;
+				&:hover {
+					background: $color--red--dark;
+					@include transition;
+				}
+			}
+		}
+	}
+	ul.values {
+		display: block;
+		margin-top: 3em;
+		img.ruby {
+			height: 50px;
+		}
+		li {
+			background-size: cover;
+			border-top: 5px solid white; 
+			padding-bottom: 10em;
+			.box {
+				@include span-columns(6);
+				padding: 1em 2em 2em 2em;
+				background: white;
+				color: white;
+				margin-top: -22px;
+				h2 {
+					font-weight: 600;
+					margin: 0;
+				}
+				p {
+					@include span-columns(12);
+					margin-top: .75em;
+				}
+			}
+			&.one {
+				background-image: url(/static/images/home--values/one.jpg);
+				border-color: $color--blue;
+				.box {
+					background: $color--blue; 
+				}
+			}
+			&.two {
+				background-image: url(/static/images/home--values/two.jpg);
+				border-color: $color--pink;
+				.box {
+					background: $color--pink; 
+				}
+			}
+			&.three {
+				background-image: url(/static/images/home--values/three.jpg);
+				border-color: $color--yellow;
+				.wrapper {
+					margin-top: -54px;
+				}
+				.box {
+					background: $color--yellow; 
+					margin-top: -5px;
+				}
+			}
+			&:nth-child(2n + 1) {
+				.box {
+					@include shift(6);
+				}
+			}
+		}
+	}
+	.twitter {
+		background: $color--blue;
+		color: white;
+		padding: 2em 0;
+		a.icon {
+			img {
+				height: 25px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		#yrs-twitter {
+			@include outer-container;
+			li {
+				list-style-type: none;
+				margin-top: 1em;
+				a {
+					font-style: italic;
+					color: white;
+				}
+			}
+		}
+	}
+	.get-start {
+		@include outer-container;
+		padding-top: 6em;
+		.left {
+			@include span-columns(9);
+			text-align: left;
+			margin-bottom: 3em;
+			h1 {
+				text-align: left;
+				font-size: 1.5em;
+				padding: .5em 0;
+				margin: 0;
+			}
+		}
+		a.start {
+			@include span-columns(3);
+			font-size: 1.5em;
+			background: $color--red;
+			color: white;
+			text-align: center;
+			padding: .5em;
+		}
+	}
+}
+
+
+
+
+
+
