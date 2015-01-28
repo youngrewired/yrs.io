@@ -1,0 +1,21 @@
+@media screen and (max-width: 900px) {
+	.blog--all {
+		width: 90vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		ul li {
+			width: 100% !important;
+			margin-left: 0;
+			&:nth-child(1n) {
+				width: 100% !important;
+				margin-left: 0 !important;
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+	.blog--post {
+		width: 90vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+}

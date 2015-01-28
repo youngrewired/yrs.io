@@ -1,0 +1,72 @@
+{% extends "templates/partials/base.html" %}
+{% set item = get('home') %}
+{% block title %}{% parent %} - Home{% endblock %}
+{% block content %}
+  <div class="home">
+    <div class="wrapper"><h1 class="title">A global community of digital makers aged 18 and under.</h1></div>
+    
+    <div class="ruby-eyes">
+      <img src="/static/images/ruby-eyes.gif">
+      <div class="mailchimp">
+      <div class="wrapper">
+        <h2>Register for our fortnightly Young Rewired Status newsletter</h2>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="//youngrewiredstate.us5.list-manage.com/subscribe/post?u=851bb016a46894ca3e7930a40&amp;id=4cb480205a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+        
+          <div class="mc-field-group">
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+        </div>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>   
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_851bb016a46894ca3e7930a40_4cb480205a" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+        </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    <ul class="values">
+      <li class="one">
+        <div class="wrapper">
+          <div class="box">
+            <h2>Skill Up</h2>
+            <p>
+              When we say nothing is impossible, we really mean it! By experimenting with different technologies, and finding ways to turn your ideas into real prototypes at our events, you’ll quickly realise that when you challenge yourself to try something new, you can achieve more than you ever expected!
+            </p>
+          </div>
+        </div>
+        
+      </li>
+      <li class="two">
+        <div class="wrapper">
+          <div class="box">
+            <h2>Collaborate</h2>
+            <p>
+              Being a part of Young Rewired State is not just about attending our events, it's about becoming a YRSer! Meeting friends who like the same awesome stuff as you is an opportunity to validate your skills, learn from others, and most importantly realise just how much more you can create when you work as part of a team.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="three">
+        <div class="wrapper">
+          <img class="ruby" src="/static/images/ruby--yellow.png">
+          <div class="box">
+            <h2>Be Open</h2>
+            <p>
+              We’re a truly open community who believe barriers keep the best from happening. That’s why we encourage you to open source your code so it can benefit others too. It’s also why we keep our events free to attend; we want you to have a chance to shine no matter where you’re from, or what your background is!
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="twitter">
+      <a href="http://twitter.com/youngrewired" class="icon"><img src="/static/images/twitter-icon.png"></a>
+      <div id="yrs-twitter"></div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends "templates/partials/base.html" %}
+{% set team = get("team") %}
+{% block title %}{% parent %} - Hello{% endblock %}
+{% block content %}
+  
+  <div class="hello">
+    
+    <h1 class="title">Hello there!</h1>
+    
+    <div class="copy wrapper">
+    	{{cms.about.about|safe}}
+    </div>
+
+    <ul class="team">
+    	{% for person in team %}
+            <li>
+                <a href="{{url(person)}}">
+                    <img src="{{person.picture|imageSize(400)}}">
+                    <h1>{{person.name}}</h1>
+                    <h2>{{person.role}}</h2>
+                    <span class="more">Read More</span>
+                </a>
+            </li>
+        {% endfor %}
+    	<li>
+            <h1>Bill Liao</h1>
+            <h2>Board Member</h2>
+        </li>
+        <li>
+            <h1>Kathryn Parsons</h1>
+            <h2>Ambassador</h2>
+        </li>
+        <li>
+            <h1>Ian Livingstone</h1>
+            <h2>Ambassador</h2>
+        </li>
+        <li>
+            <h1>Martha Lane Fox</h1>
+            <h2>Ambassador</h2>
+        </li>
+    </ul>
+
+    <div class="rewired-state">
+    	<div class="top">
+    		<img src="/static/images/rs-logo-blue.png">
+    		<div class="copy">
+    			<h2>Rewired State have a community of 1000+ developers, designers and analysts.</h2>
+    			<p>Rewired State have a community of skilled developers, designers and analysts who help rethink approaches and unlock solutions in otherwise dormant sets of data.</p>
+    		</div>
+    	</div>
+    	<ul class="team">
+	        <li>
+	            <img src="https://lh6.ggpht.com/8Y4ljcOwFLAJaKBbd0pv8_8A7ideF3W6kjxu7aC96f-kfeem_QPMpWccrF9N0dOoawv2hJHMgQEnxmanQJxD8z16jNBNoA=s400">
+	            <h1>Julia Higginbottom</h1>
+	            <h2>CEO</h2>
+	        </li>
+	        <li>
+	            <img src="https://lh5.ggpht.com/3vsmFChvlryX70Xq6hc1nwoQ_IFwCvIbvbhzXeA5B_g0BWitRURq-K42CjPDxy_wgvX0uNHKTdhZZ_0X95k9BbcNvKZN=s400">
+	            <h1>Kevin Lewis</h1>
+	            <h2>Developer Relations</h2>
+	        </li>
+	        <li>
+	            <img src="https://lh3.ggpht.com/V8FSYqSF24BVe-qQ6sGjTQYG7sIQmufRzrWkJ7mlNJTejKvbdqU5nT6jjTStARp4YHn53Mi6ufOdc_sQn3OFBi5ECg_M=s400">
+	            <h1>Nat Higginbottom</h1>
+	            <h2>Media Production Lead</h2>
+	        </li>
+	        <li>
+	            <img src="https://lh6.ggpht.com/mSs5swLdWQQQymNd9pavpuqMOQBJqsOKQ2UMyyR7jf171JBlyHABGIY82Iu_lLSl_r_xQ9oFnoJjc6tNBZlhLraq8lfe=s400">
+	            <h1>Gideon Brett</h1>
+	            <h2>Project Support</h2>
+	        </li>
+	    	<li>
+	            <h1>Emma Mulqueeny</h1>
+	            <h2>Founder</h2>
+	        </li>
+	        <li>
+	            <h1>Derek Gannon</h1>
+	            <h2>Non-Executive Director</h2>
+	        </li>
+	        <li>
+	            <h1>Toby Moores</h1>
+	            <h2>Non-Executive Director</h2>
+	        </li>
+	        <li>
+	            <h1>Martha Lane Fox</h1>
+	            <h2>Ambassador</h2>
+	        </li>
+	    </ul>
+	    <a href="http://rewiredstate.org" class="cta button">Visit Rewired State's Website</a>
+    </div>
+
+  </div>
+
+{% endblock %}

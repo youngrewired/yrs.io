@@ -1,0 +1,34 @@
+{% extends "templates/partials/base.html" %}
+{% set item = get('supporters') %}
+{% set current = cms.currentsponsors %}
+{% block title %}{% parent %} - Supporters{% endblock %}
+{% block content %}
+  <div class="supporters">
+    <img class="header" src="/static/images/page--headers/supporters.jpg">
+    <div class="current">
+      <h2>2015 Sponsors</h2>
+      <ul>
+        {% for image in item.current_supporters %}
+          <li>
+            <img src="{{ image|imageSize(1000) }}" />
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="past">
+      <h2>Past Sponsors</h2>
+      {{ item.past_sponsors|safe }}
+    </div>
+    <div class="partners">
+      <h2>Partnering Organisations</h2>
+      {{ item.partners|safe }}
+    </div>
+    <div class="crowdfunder">
+      <h2>Community Supporters</h2>
+      <p>
+        These are the amazing community members who backed our <a href="http://crowdfunder.co.uk/the-festival-of-code">Crowdfunder campaign.</a> We've used pledger names as provided, but if you'd like to swap out a display name for your real name, let <a href="mailto:kevin@rewiredstate.org">Kevin</a> know.
+      </p>
+      {{ item.community_supporters|safe }}
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,75 @@
+.blog--all {
+	@include outer-container;
+	ul {
+		@include span-columns(12);
+		margin-bottom: 50px;
+		li {
+			
+			list-style-type: none;
+			a {
+				color: black;
+				padding: 1em 0 1.75em;
+				display: block;
+				border-bottom: 1px solid $color--lightgrey;
+				img {
+					display: none;
+				}
+				h1 {
+					font-size: 1em;
+					font-weight: 600;
+				}
+				h2 {
+					font-size: 1em;
+					margin-top: -.5em;
+				}
+			}
+
+			@mixin blog-post-block {
+				list-style-type: none;
+				margin-bottom: 2em;
+				a {
+					color: black;
+					border-bottom: none;
+					img {
+						display: block;
+						width: 100%;
+						border-radius: 6px;
+					}
+					h1 {
+						font-size: 1em;
+						font-weight: 600;
+					}
+					h2 {
+						@extend h1;
+						font-weight: 300;
+						margin-top: -.5em;
+					}
+				}
+			}
+			&:nth-child(1),
+			&:nth-child(2) {
+				@include span-columns(6);
+				@include blog-post-block;
+			}
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5) {
+				@include span-columns(4);
+				@include blog-post-block;
+			}
+			&:nth-child(2),
+			&:nth-child(5) {
+				@include omega;
+			}
+			&:nth-child(6):before {
+				content: "Older posts";
+				font-size: 1.5em;
+				font-weight: 600;
+				
+			}
+			&:last-child a {
+				border-bottom: none;
+			}
+		}
+	}
+}

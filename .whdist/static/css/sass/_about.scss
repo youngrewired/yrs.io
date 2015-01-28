@@ -1,0 +1,86 @@
+.about {
+	@include outer-container;
+	article {
+		> * {
+			margin-bottom: 1em;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.team {
+		margin-top: 2em;
+		h1 {
+			font-size: 1.5em;
+			margin: 1em 0;
+		}
+		ul {
+			@include span-columns(12);
+			li {
+				@include span-columns(3 of 12);
+				a {
+					display: block;
+					cursor: default;
+					img.profile {
+						width: 100%;
+					}
+					h2.name {
+						font-size: 1em;
+						text-transform: uppercase;
+						margin: .75em 0;
+						color: black;
+					}
+					h3.role {
+						@extend h2.name;
+						text-transform: capitalize;
+						margin-bottom: 1.25em;
+					}
+					.read-more {
+						width: 100%;
+						display: block;
+						padding: .5em;
+						background: $color--red;
+						color: white;
+						text-align: center;
+						@include transition;
+						&:hover {
+							@include transition;
+							background: $color--red--dark;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+			&.board {
+				margin-top: 3em;
+				li {
+					@include span-columns(4 of 12);
+					@include omega(3n);
+					padding: 1em;
+					margin-top: 1em;
+					color: white;
+					h2 {
+						font-size: 1em;
+						text-transform: uppercase;
+					}
+					h3 {
+						@extend h2;
+						text-transform: capitalize;
+					}
+					&:nth-child(1),
+					&:nth-child(5) {
+						background: $color--blue;
+					}
+					&:nth-child(2),
+					&:nth-child(6) {
+						background: $color--pink;
+					}
+					&:nth-child(3),
+					&:nth-child(4) {
+						background: $color--yellow;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+@media screen and (max-width: 900px) {
+	.hello {
+		ul.team {
+			width: 90vw;
+			padding-left: 5vw;
+			padding-right: 5vw;
+			li {
+				@include span-columns(12);
+				@include shift(0);
+				margin-bottom: 50px;
+			}
+		}
+		.rewired-state {
+			.top {
+				@include outer-container;
+				width: 90vw;
+				padding-left: 5vw;
+				padding-right: 5vw;
+				img {
+					@include span-columns(8);
+					@include shift(2);
+					margin-bottom: 2em;
+				}
+				.copy {
+					@include span-columns(12);
+					@include shift(0);
+					text-align: center;
+				}
+			}
+			a.cta {
+				@include span-columns(10);
+				@include shift(1);
+			}
+		}
+	}
+	.team--post.wrapper {
+		h2.role {
+			font-size: 1em !important;
+		}
+		img.profile {
+			@include span-columns(12 of 12);
+			@include shift(0); 
+		}
+		a.email {
+			@include span-columns(12);
+			@include shift(0);
+		}
+	}
+}
