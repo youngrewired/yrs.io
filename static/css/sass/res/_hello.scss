@@ -33,4 +33,17 @@
 			}
 		}
 	}
+	.team--post.wrapper {
+		h2.role {
+			font-size: 1em !important;
+		}
+		img.profile {
+			@include span-columns(12 of 12);
+			@include shift(0); 
+		}
+		a.email {
+			@include span-columns(12);
+			@include shift(0);
+		}
+	}
 }

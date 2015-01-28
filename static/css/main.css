@@ -698,6 +698,25 @@ footer {
     width: 82.94039%;
     margin-left: 8.5298%; }
     .hello .rewired-state a.cta:last-child {
+      margin-right: 0; }
+
+  .team--post.wrapper h2.role, .team--post.wrapper .about .team ul.board li h3.role, .about .team ul.board li .team--post.wrapper h3.role {
+    font-size: 1em !important; }
+  .team--post.wrapper img.profile {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%; }
+    .team--post.wrapper img.profile:last-child {
+      margin-right: 0; }
+  .team--post.wrapper a.email {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%; }
+    .team--post.wrapper a.email:last-child {
       margin-right: 0; } }
 .contact {
   max-width: 960px;
@@ -1374,7 +1393,8 @@ footer {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  margin-left: 34.11922%; }
+  margin-left: 34.11922%;
+  border-radius: 6px; }
   .team--post img.profile:last-child {
     margin-right: 0; }
 .team--post article {
