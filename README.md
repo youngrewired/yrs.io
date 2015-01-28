@@ -1,6 +1,16 @@
-## This is a Webhook powered website.
+## yrs.io is powered by Webhook.
 
-This is the boilerplate readme installed whenever you create a [Webhook CMS](http://www.webhook.com) powered site. You should probably replace it with information specific to your site.
+This project depends on Webhook (which in turn depends on node) and SASS.
 
-* [Documentation for users found here.](http://webhook.com/docs/)
-* [Documentation for code contributors found here.](https://github.com/webhook/webhook-generate/blob/master/CONTRIBUTING.md)
+    git clone https://github.com/youngrewired/yrs.io.git
+    cd yrs.io
+    wh init yrs-webhook
+    > login credentials
+    wh serve
+    
+# To do
+
+* Add a supporters page
+* Add a press & media page
+* Add a past projects page
+* Redesign contact page
