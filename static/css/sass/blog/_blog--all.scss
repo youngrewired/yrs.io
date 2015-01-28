@@ -2,6 +2,7 @@
 	@include outer-container;
 	ul {
 		@include span-columns(12);
+		margin-bottom: 50px;
 		li {
 			
 			list-style-type: none;

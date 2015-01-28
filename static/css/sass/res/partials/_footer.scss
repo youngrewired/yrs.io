@@ -1,0 +1,6 @@
+@media screen and (max-width: 900px) {
+	footer img {
+		@include span-columns(6);
+		@include shift(3);
+	}
+} 

@@ -16,6 +16,7 @@
                 width: 100%;
                 @include span-columns(3 of 3);
                 margin-left: 0;
+                border-radius: 6px;
             }
             h1 {
                 font-weight: 300;

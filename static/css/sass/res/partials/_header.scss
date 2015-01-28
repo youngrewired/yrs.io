@@ -1,0 +1,27 @@
+@media screen and (max-width: 1200px) {
+	#header .contact,
+	#header .menu {
+		margin-top: 9vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#header .contact {
+		display: none;
+	}
+	#header .menu {
+		@include span-columns(1);
+		margin-top: 13.25vw;
+		font-size: 1em;
+		span { 
+			display: none; 
+		}
+	}
+	#header #logo {
+		@include span-columns(6);
+		@include shift(2);
+	}
+	#header #nav ul {
+		@include span-columns(12 of 12);
+	}
+}

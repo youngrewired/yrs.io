@@ -21,26 +21,35 @@ $color--rs-brand: RGBA(0, 146, 221, 1);
 @import "neat/neat";
 
 @import "base";
+@import "res/base";
 
 @import "partials/header";
+@import "res/partials/header";
 @import "partials/footer";
+@import "res/partials/footer";
 
 @import "about";
 @import "start";
 @import "support";
 @import "hello";
+@import "res/hello";
 @import "contact";
+@import "res/contact";
 @import "jobs";
+@import "res/jobs";
 
 @import "home";
+@import "res/home";
 @import "home--featured-block";
 
 @import "schemes/festival";
+@import "res/festival";
 @import "schemes/hyperlocal";
 @import "schemes/everywhere";
 
 @import "blog/blog--all";
 @import "blog/blog--post";
+@import "res/blog";
 
 @import "team/team--post";
 
