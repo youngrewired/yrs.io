@@ -1037,6 +1037,7 @@ footer {
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
+      margin-left: 51.17883%;
       padding: 1.5em 2em 2em 2em;
       background: white;
       color: white;
@@ -1055,12 +1056,12 @@ footer {
         .home ul.values li .box p:last-child {
           margin-right: 0; }
     .home ul.values li.one {
-      background-image: url(/static/images/home--values/one.jpg);
+      background-image: url(/static/images/home--values/two.jpg);
       border-color: #7EC7E3; }
       .home ul.values li.one .box {
         background: #7EC7E3; }
     .home ul.values li.two {
-      background-image: url(/static/images/home--values/two.jpg);
+      background-image: url(/static/images/home--values/one.jpg);
       border-color: #AD196F; }
       .home ul.values li.two .box {
         background: #AD196F; }
@@ -1072,8 +1073,6 @@ footer {
       .home ul.values li.three .box {
         background: #F9CD1D;
         margin-top: -5px; }
-    .home ul.values li:nth-child(2n + 1) .box {
-      margin-left: 51.17883%; }
 .home .twitter {
   background: #7EC7E3;
   color: white;

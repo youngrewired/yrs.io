@@ -118,6 +118,7 @@
 			padding-bottom: 10em;
 			.box {
 				@include span-columns(6);
+				@include shift(6);
 				padding: 1.5em 2em 2em 2em;
 				background: white;
 				color: white;
@@ -132,14 +133,14 @@
 				}
 			}
 			&.one {
-				background-image: url(/static/images/home--values/one.jpg);
+				background-image: url(/static/images/home--values/two.jpg);
 				border-color: $color--blue;
 				.box {
 					background: $color--blue; 
 				}
 			}
 			&.two {
-				background-image: url(/static/images/home--values/two.jpg);
+				background-image: url(/static/images/home--values/one.jpg);
 				border-color: $color--pink;
 				.box {
 					background: $color--pink; 
@@ -154,11 +155,6 @@
 				.box {
 					background: $color--yellow; 
 					margin-top: -5px;
-				}
-			}
-			&:nth-child(2n + 1) {
-				.box {
-					@include shift(6);
 				}
 			}
 		}
