@@ -1,0 +1,310 @@
+{% extends "templates/partials/base.html" %}
+{% block title %}{% parent %} - Get Started{% endblock %}
+{% block content %}
+  
+  <div class="get-started">
+
+    <h1 class="title">Get started</h1>
+
+    
+    <h1 id="part-1-learn-html-basics">Part 1 - Learn HTML Basics</h1>
+<ol>
+<li>
+<p>Go to <a href="http://codepen.io" target="_blank">codepen.io</a> and click 'New Pen'</p>
+</li>
+<li>
+<p>Type in the following in the HTML pane
+    <pre>
+    Hello There
+    </pre>
+    <em class="note">Note: this displays correctly in the output, but there's no way of specifying what should be bold, italic, or underlined, etc. To do this, we use HTML tags. Add tags start with &lt; and end in &gt;, the content in between describes the tag.</em></p>
+</li>
+<li>
+<p>Replace the content with the following and note the output
+    <pre>
+    &lt;h1&gt;Hello There
+    </pre>
+    <em class="note">Note: the <code>&lt;h1&gt;</code> tag stands for heading level 1, the largest of six. The others are <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code>.</em></p>
+</li>
+<li>
+<p>On the second line, write the following
+    <pre>
+    &lt;h1&gt;Hello there
+    &lt;p&gt; My name is {Your name}
+    </pre>
+    <em class="note">Note: <code>&lt;p&gt;</code> stands for paragraph, which is formatted as 'normal' text. The output should all be large, and that's because we need to tell the browser when a tag is finished. We do that using an end tag...</em></p>
+</li>
+<li>
+<p>Add end tags to your code
+    <pre>
+    &lt;h1&gt;Hello there&lt;/h1&gt;
+    &lt;p&gt;My name is {Your name}&lt;/p&gt;
+    </pre>
+</p>
+</li>
+<li>
+<p>We're now going to learn about parent and child elements by creating a bulleted list. Think about the structure of a list - there is the list in it's entirety, and then induvidual bullet points. The tag for the list is <code>&lt;ul&gt;</code> and for each point it is <code>&lt;li&gt;</code>. Add this code below the paragraph.
+        <pre>
+        &lt;ul&gt;
+            &lt;li&gt;Point 1&lt;/li&gt;
+            &lt;li&gt;Point 2&lt;/li&gt;
+            &lt;li&gt;Point 3&lt;/li&gt;
+        &lt;/ul&gt;        
+        </pre>
+    </p>
+</li>
+<li>
+<p>Now we'll insert an image. Before we start, we'll need an image. You can use any direct image link - but here's the Young Rewired State logo link for use in this tutorial: http://www.yrs.io/static/images/yrs-logo-red.png</p>
+<p>Add this line to your code:</p>
+<pre><code>&lt;img src="http://www.yrs.io/static/images/yrs-logo-red.png"&gt;
+</code></pre>
+<p>The image tag has two things of note. Firstly, an 'attribute'. These work very similarly to CSS property rules, which we will learn about later. Attributes give more information about your element. This is the structure of an element with an attribute tag:</p>
+<pre><code>&lt;element attribute="value" attribute2="value 2"&gt;&lt;/element&gt;
+</code></pre>
+<p>The second thing of note is the absence of a closing tag, like we have seen on elements so far. The <code>&lt;img&gt;</code> tag is one of very few which doesn't need a closing tag. Assume all do, and I'll point out when that is different. </p>
+</li>
+</ol>
+<h1 id="part-2-learn-css-basics">Part 2 - Learn CSS Basics</h1>
+<p>We're now going to work in the CSS pane of CodePen. Before we do, please change the following setting:</p>
+
+<p> Before we begin: Click the settings icon in the CSS pane, and choose 'Normalize' instead of 'Reset'.<p>
+<p>CSS is structured like this:</p>
+<pre><code>    element {
+        property: value;
+        property2: value2;
+    }
+</code></pre>
+<p>The element is what sits in between &lt; and &gt;, the property is what you want to set/change, and the value is what you're changing it to. For example:</p>
+<pre><code>    h1 {
+        color: red;
+    }
+</code></pre>
+<p>We're going to go through the CSS quite quickly, and learn new properties as we need them. </p>
+<ol>
+<li>
+<p>Change the background, text colour and justification of the <code>&lt;h1&gt;</code> element. We'll be setting four properties in our CSS. Type the following: </p>
+<pre><code>h1 {
+    background: red; 
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+</code></pre>
+</li>
+<li>
+<p>That's some great styling to get started, and before we make any more changes, we're going to use a new property - padding. Padding adds some space inside of an element, now is a great time to show it off. Amend your code.</p>
+<pre><code>h1 {
+    background: red; 
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+</code></pre>
+</li>
+<li>
+<p>I'd like to note how you can target child elements inside CSS. You can use a space to seperate them, here the element on the left is the parent, and the one on the right is the child. Like so:</p>
+<pre><code>ul li {
+
+}
+</code></pre>
+</li>
+<li>
+<p>Now we're going to style the list. <code>/* This is a CSS comment which will not affect the code. I will use them to explain each line. */</code> </p>
+<pre><code>ul li {
+    background: lightblue;
+    color: white;
+    width: 80%; /* this will only span 80% of the width of the page */
+    margin-left: 10%; /* this will push the element 10% on the left */
+    padding: 20px; /* adds spacing inside the elements */
+    margin-bottom:10px; /* adds spacing below each element */
+    border-radius: 5px; /* Rounds the edges of each item */
+}
+</code></pre>
+</li>
+</ol>
+<p>If you want to take a look at more CSS properties - check out the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla Developer Network reference.</a></p>
+<h1 id="the-todo-list-project">The ToDo List Project</h1>
+<p>We'll be building a simple notetaking application. We'll be using HTML, CSS, and Javascript (which we'll explore when we are using it).</p>
+<p><a href="http://codepen.io/phazonoverload/pen/zxderN" target="_blank">Here's a reference for the finished project, along with the code in case you get stuck.</a></p>
+<p>Before writing the HTML, it's important the think about the structure of a web page. </p>
+<img src="/static/images/resources/todo-screenshot.png">
+<ol>
+<li>
+<p>Let's create and style the heading</p>
+<pre><code>/* HTML */
+
+&lt;header&gt;
+    &lt;h1&gt;ToDo List&lt;/h1&gt;
+&lt;/header&gt;
+
+
+
+/* CSS */
+
+header {
+    background: #E34F50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+</code></pre>
+<p>The  <code>&lt;header&gt;</code> tag is meant to be used specifically when creating headers. It adds no extra styling by default (like, for example the <code>&lt;li&gt;</code> adds bullet points), but makes the code easy to understand.</p>
+<p>The code #E34F50 refers to a colour. You can also use keywords use as 'red', or 'navy'. The specific code is YRS' brand colour. </p>
+</li>
+<li>
+<p>Now let's add the text box. We do this by using the <code>&lt;input&gt;</code> tag (which 'self closes' like the <code>&lt;img&gt;</code> tag). We then tell it what type of content to accept using the <code>type=""</code> attribute. Add this code:</p>
+<pre><code>&lt;input type="text" /&gt;
+</code></pre>
+<p class="try-this">Try this: change the word 'text' for 'date', 'password', or 'file', just make sure it is changed back to 'text' before continuing. </p>
+</li>
+<li>
+<p>Let's add the clickable explanation of the text box before continuing. Add this code above the input:</p>
+<pre><code>&lt;label&gt;What would you like to remember?&lt;/label&gt;
+</code></pre>
+<p>To make it clickable, you need some way to link the label and the input. To do this, we have to add an attribute to both elements. Relace the input and label with the following code: </p>
+<pre><code>&lt;label for="todo"&gt;What would you like to remember?&lt;/label&gt;
+&lt;input id="todo" type="text" /&gt;
+</code></pre>
+<p>The <code>for</code> attribute refers the the <code>&lt;input&gt;</code> with the matching <code>id</code>. </p>
+</li>
+<li>
+<p>Let's style it! </p>
+<pre><code>label {
+    display: block;
+    text-align: center;
+}
+
+
+input[type="text"] {
+    width: 40%;
+    margin-left: 30%; 
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+</code></pre>
+<p>There's lots to talk about here.</p>
+<h2 id="display-inline"><code>display: inline;</code></h2>
+<p>The <code>display</code> property is one of the most important for controlling layout in CSS. Every element has a default (generally <code>block</code> or <code>inline</code>). The <code>&lt;label&gt;</code> tag by default has a value of <code>inline</code>.</p>
+<p><code>inline</code> doesn't disrupt the flow of a document, but allows them to be identified. A link in a paragraph is a good example of this. <code>block</code> elements start on a new line and stretches out to the left and right as far as it can. </p>
+<p>In order to make the <code>&lt;label&gt;</code> sit on it's own line, we must change it's default display property. </p>
+<h2 id="box-sizing-border-box"><code>box-sizing: border-box</code></h2>
+<p>The key concept here is quiequite complex, so don't worry if you don't fully understand it at this point. When you add <code>padding</code> to an element, you add some spacing to the inside of it. By default, this makes the element slightly bigger. Using <code>box-sizing: border-box</code> changes that default and keeps the original element sized correctly.</p>
+<h2 id="border-1px-solid-grey"><code>border: 1px solid grey</code></h2>
+<p>This is actually good CSS shorthand for three different rules:</p>
+<pre><code>border-width: 1px;
+border-style: solid /*other options are dotted and dashed*/
+border-color: grey;
+</code></pre>
+<em class="note">Note: the border sits outside of the padding, but inside teh margin.the margin. Don't worry about this, but if you want more information, search for 'css box model'</em>
+</li>
+<li>
+<p>Let's put in the go button for now, and we'll hook it up and make it work later. </p>
+<pre><code>/* HTML */
+
+&lt;p class="go"&gt;Go&lt;/p&gt;
+
+/* CSS */
+
+p.go {
+    text-align: center;
+    color: blue;
+}
+
+p:hover {
+    color: darkblue;
+}
+</code></pre>
+<p>Generally, we wouldn't use the <code>&lt;p&gt;</code> for a button, but this is a demonstration of how, if you want, the tags are interchangeable can be interchangeable at certain points. </p>
+<p>In CSS, a period (<code>.</code>) is used to represent the class attribute. As the <code>&lt;p&gt;</code> has a class attribute of the value <code>go</code>, you can use <code>p.go</code> in the CSS to refer to all paragraph tags with the specific class of 'go'.</p>
+<h2 id="phover"><code>p:hover</code></h2>
+<p>:hover is a 'psudoclass', and this one tells the browser to style an element in a certain way when it is being interacted with. As it's probably clear, this psudoclass changes the styling when the element is covered over with the cursor pointer. </p>
+<p class="try-this">Try this: change the <code>&lt;p&gt;</code> for a <code>&lt;button&gt;</code>, or a self-closing <code>&lt;a&gt;</code> tag. Don't forget to also change the CSS! </p>
+</li>
+<li>
+<p>Let's create style the list.   <br />
+</p>
+<pre><code>
+/* HTML */
+
+&lt;ul&gt;
+    &lt;li&gt;Point 1&lt;/li&gt;
+    &lt;li&gt;Point 2&lt;/li&gt;
+    &lt;li&gt;Point 3&lt;/li&gt;
+&lt;/ul&gt;
+
+ 
+
+/* CSS */
+
+ul {
+    -webkit-padding-start: 0;
+}
+
+
+ul li {
+    list-style-type: none; /* Removes bullet points */
+    width: 40%; 
+    margin-left: 30%;
+    background: #7EC7E3; /* YRS Brand Blue */
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+</code></pre>
+<p><code>-webkit-padding-start: 0;</code> - let's talk about default browser styling. Browsers are awesome, they make our jobs as developers easy by looking at our HTML and deciding what type of styling is appropiate (bullet points on a list, or a blue underline on links). By default, all list have some spacing on the left, and it's this rule which overrides that. </p>
+</li>
+</ol>
+<h1 id="lets-add-some-javascript">Let's add some Javascript!</h1>
+<p>This thing we've built is great, but we need to write a small amount of code which takes the contents of the field when a user clicks 'go' and adds it to the list. </p>
+<ol>
+<li>
+<p>Click the settings icon in the JS pane in CodePen, and make sure that 'use the latest version of' is selecting jQuery. We'll use this to write nicer code. </p>
+</li>
+<li>
+<p>Type the following in the Javascript pane:</p>
+<pre><code>$("p.go").click(function(){
+
+});
+</code></pre>
+<p>We always start a new 'event listener' (a piece of code which watches for the user to interact) with the same general formatting. </p>
+<img src="/static/images/resources/todo-js-syntax.png" alt="">
+</li>
+<li>
+<p>Add the middle two lines lines in to the function</p>
+<pre><code>$("p.go").click(function(){
+    var item = $("#todo").val();
+    $("ul").prepend("&lt;li&gt;" + item + "&lt;/li&gt;");
+});
+</code></pre>
+<p>In the first line, note the <code>var</code> keyword. This allows you to store whatever is to the right of the equals sign to the word <code>item</code>. Now, whenever you want to type that code, all you have to do is type <code>item</code> instead. </p>
+<p><code>.val();</code> gets the value of an element. In this case, the item with the ID of todo (in CSS and javascriptm you can use <code>#</code> to represent the ID attribute, similar to the <code>.</code> for classes we looked at before). The <code>#todo</code> element is actually referring to the text input <code>&lt;input id="todo" type="text" /&gt;</code>. We end each instruction with a semicolon (<code>;</code>).</p>
+<p><strong>So now, when the go button is clicked, the value of the text box is stored in a variable called item.</strong></p>
+<p>The second line starts by targeting the <code>&lt;ul&gt;</code> element with <code>$("ul")</code>. and then tells the browser what to do with it. </p>
+<p>We are going to add content inslude the <code>&lt;ul&gt;</code>, but at the very start. To do this, we use the <code>.prepend()</code>, placing the content we want inserted inside of the brackets. </p>
+<p>Normally, we would use quotes around everything, but we aren't meant to for variables. In order to string this all together, we have the add the variable to the end of the opening tag, and then add the closing tag on the variable. It is the same as typing this: </p>
+<pre><code>$("ul").prepend("&lt;li&gt; This is a point &lt;/li&gt;");
+</code></pre>
+</li>
+<li>
+<p>Test everything works by typing in the box and clicking go. </p>
+</li>
+</ol>
+<h1 id="well-done-next-steps">Well done! Next steps...</h1>
+<ul>
+<li><a href="http://webdesign.tutsplus.com/courses/30-days-to-learn-html-css" target="_blank">30 Days to Learn HTML &amp; CSS free online course</a></li>
+<li><a href="http://code.tutsplus.com/courses/30-days-to-learn-jquery" target="_blank">30 Days to Learn jQuery free online course</a></li>
+<li><a href="http://todomvc.com/" target="_blank">Learn how to make the items save when you refresh</a></li>
+</ul>
+
+  </div>
+
+{% endblock %}
