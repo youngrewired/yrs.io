@@ -9,6 +9,9 @@
 			margin-bottom: 2em; 
 			border-radius: 6px;
 		}
+		a {
+			color: $color--red;
+		}
 	}
 	.cta {
 		@include outer-container;

@@ -5,8 +5,18 @@
 		&.title {
 			font-weight: 800;
 		}
-		&#the-todo-list-project {
-			margin-top: 2em;
+		&.section {
+			background: $color--red;
+			color: white;
+			padding: .5em;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: 600;
+			border-radius: 6px;
+			margin-top: 1em;
+			@media screen and (max-width:900px) {
+				font-size: 1.25em;
+			}
 		}
 	}
 	a {
@@ -20,27 +30,33 @@
 	}
 	ol {
 		-webkit-padding-start: 25px;
+		margin-top: 2.5em;
 		li {
 			margin-bottom: 2em;
+			p:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 	em.note {
-		background: $color--lightgrey;
 		color: $color--darkgrey;
 		display: block;
-		padding: 1em 1.5em;
-		border-radius: 6px;
 		margin-top: 1em;
 	}
 	pre {
 		margin-top: 2em;
-		color: #444;
-		margin-bottom: 2.5em;
+		margin-bottom: 2em;
+		background: $color--lightgrey;
+		color: $color--darkgrey;
+		padding-top: 2em;
+		padding-bottom: 1em;
+		border-radius: 6px; 
 	}
 	p.try-this {
-		@extend em.note;
-		background: $color--red; 
+		padding: 1em 1.25em;
+		background: $color--blue; 
 		color: white;
+		border-radius: 6px;
 	}
 	h2 {
 		margin-top: 2em;
