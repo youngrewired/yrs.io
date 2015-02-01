@@ -22,12 +22,20 @@
 			}
 		}
 		ul.values li {
+			padding-bottom: 2em;
+			background-image: none !important;
 			.box {
 				@include span-columns(12);
 				@include shift(0);
 			}
 			&:nth-child(2n + 1) .box {
 				@include shift(0);
+			}
+			&.three .wrapper {
+				margin-top: -20px;
+			}
+			.ruby {
+				display: none;
 			}
 		}
 		.twitter #yrs-twitter {

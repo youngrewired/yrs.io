@@ -1161,16 +1161,23 @@ footer {
   .home .mailchimp input[type="email"] {
     margin-bottom: 1em;
     text-align: center; }
-  .home ul.values li .box {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-left: 0%; }
-    .home ul.values li .box:last-child {
-      margin-right: 0; }
-  .home ul.values li:nth-child(2n + 1) .box {
-    margin-left: 0%; }
+  .home ul.values li {
+    padding-bottom: 2em;
+    background-image: none !important; }
+    .home ul.values li .box {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 0%; }
+      .home ul.values li .box:last-child {
+        margin-right: 0; }
+    .home ul.values li:nth-child(2n + 1) .box {
+      margin-left: 0%; }
+    .home ul.values li.three .wrapper {
+      margin-top: -20px; }
+    .home ul.values li .ruby {
+      display: none; }
   .home .twitter #yrs-twitter {
     padding: 0 1em; } }
 .home .featured-block {
