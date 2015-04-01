@@ -43,6 +43,7 @@
     "swig": "~1.4.1",
     "moment": "~2.8.1",
     "tiny-lr": "~0.1.0",
-    "cheerio": "~0.18.0"
+    "cheerio": "~0.18.0",
+    "nodejs-websocket": "~1.2.0"
   }
 }

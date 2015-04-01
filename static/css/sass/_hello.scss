@@ -9,8 +9,8 @@
 	ul.team {
 		@include outer-container;
 		li {
-			@include span-columns(3 of 12);
-			@include omega(4n);
+			@include span-columns(2.4 of 12);
+			@include omega(5n);
 			margin-bottom: 25px;
 			img {
                 width: 100%;
@@ -23,14 +23,14 @@
                 @include span-columns(3 of 3);
                 color: $color--darkgrey;
                 text-transform: uppercase;
-                font-size: 1.25em;
+                font-size: 1em;
                 margin-top: 1em;
             }
             h2 {
                 font-weight: 300;
                 @include span-columns(3 of 3);
                 color: $color--darkgrey;
-                font-size: 1em;
+                font-size: .9em;
                 margin-bottom: 1.25em;
             } 
             span.more {

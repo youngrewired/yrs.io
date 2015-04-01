@@ -1,0 +1,65 @@
+{% extends "templates/partials/base.html" %}
+{% block title %}{% parent %} - Everywhere{% endblock %}
+{% block content %}
+  
+  <div class="scheme hana wrapper">
+    
+    <h1 class="title">{{cms.hanahack.name}}</h1>
+
+    <img src="/static/images/YRSxSAP.png">
+
+    <div class="copy">
+      <div class="sap-history">
+        {{cms.hanahack.sap_intro|safe}}
+      </div>
+      <div class="challenge">
+        <h1>The Challenge</h1>
+        {{cms.hanahack.the_challenge|safe}}
+      </div>
+      <div class="resources">
+        <h1>Resources</h1>
+        <ul>
+          {% for resource in cms.hanahack.resources %}
+            <li>
+              {{ resource.video.html|safe }}
+              <div class="meta">
+                <a href="{{resource.video.original_url}}">{{resource.video.title}}</a>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="data">
+        <h1>Data</h1>
+        <ul>
+          {% for source in cms.hanahack.data %}
+            <li>
+              <h2><a href="{{source.link}}">{{source.name}}</a></h2>
+              <p>{{source.description}}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="events">
+        <h1>Events</h1>
+        {{cms.hanahack.event_copy|safe}}
+        <ul>
+          {% for event in cms.hanahack.events %}
+            <li class="confirmed">
+              <a href="{{event.signup_link}}">
+                <h2>{{event.location}}</h2>
+                <h3>{{event.date}}</h3>
+                <p>Click here to sign up now</p>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="draw">
+        <h1>Additional iPad Prize Draw</h1>
+        {{cms.hanahack.ipad_draw|safe}}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

@@ -67,8 +67,17 @@ img.header {
 
   h1.title, .blog--all ul li:nth-child(1) a h2.title, .blog--all .about .team ul.board li:nth-child(1) a h3.title, .about .team .blog--all ul.board li:nth-child(1) a h3.title, .blog--all ul li:nth-child(2) a h2.title, .blog--all .about .team ul.board li:nth-child(2) a h3.title, .about .team .blog--all ul.board li:nth-child(2) a h3.title, .blog--all ul li:nth-child(3) a h2.title, .blog--all .about .team ul.board li:nth-child(3) a h3.title, .about .team .blog--all ul.board li:nth-child(3) a h3.title, .blog--all ul li:nth-child(4) a h2.title, .blog--all .about .team ul.board li:nth-child(4) a h3.title, .about .team .blog--all ul.board li:nth-child(4) a h3.title, .blog--all ul li:nth-child(5) a h2.title, .blog--all .about .team ul.board li:nth-child(5) a h3.title, .about .team .blog--all ul.board li:nth-child(5) a h3.title {
     font-size: 1.25em !important; } }
+.header-banner a {
+  width: 100%;
+  background: #E34F50;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: .8em;
+  display: block; }
+
 .header-line {
-  height: 5px;
+  height: 0px;
   background: #E34F50; }
 
 #header #nav {
@@ -549,13 +558,13 @@ footer {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 23.23176%;
+      width: 18.11388%;
       margin-bottom: 25px; }
       .hello ul.team li:last-child {
         margin-right: 0; }
-      .hello ul.team li:nth-child(4n) {
+      .hello ul.team li:nth-child(5n) {
         margin-right: 0; }
-      .hello ul.team li:nth-child(4n+1) {
+      .hello ul.team li:nth-child(5n+1) {
         clear: left; }
       .hello ul.team li img {
         width: 100%;
@@ -575,7 +584,7 @@ footer {
         width: 100%;
         color: RGBA(102, 117, 127, 1);
         text-transform: uppercase;
-        font-size: 1.25em;
+        font-size: 1em;
         margin-top: 1em; }
         .hello ul.team li h1:last-child, .hello .blog--all ul.team li:nth-child(1) a h2:last-child, .blog--all .hello ul.team li:nth-child(1) a h2:last-child, .hello .blog--all .about ul.team ul.board li:nth-child(1) a h3:last-child, .blog--all .about .hello ul.team ul.board li:nth-child(1) a h3:last-child, .hello .about ul.team .blog--all ul.board li:nth-child(1) a h3:last-child, .about .hello ul.team .blog--all ul.board li:nth-child(1) a h3:last-child, .hello .blog--all ul.team li:nth-child(2) a h2:last-child, .blog--all .hello ul.team li:nth-child(2) a h2:last-child, .hello .blog--all .about ul.team ul.board li:nth-child(2) a h3:last-child, .blog--all .about .hello ul.team ul.board li:nth-child(2) a h3:last-child, .hello .about ul.team .blog--all ul.board li:nth-child(2) a h3:last-child, .about .hello ul.team .blog--all ul.board li:nth-child(2) a h3:last-child, .hello .blog--all ul.team li:nth-child(3) a h2:last-child, .blog--all .hello ul.team li:nth-child(3) a h2:last-child, .hello .blog--all .about ul.team ul.board li:nth-child(3) a h3:last-child, .blog--all .about .hello ul.team ul.board li:nth-child(3) a h3:last-child, .hello .about ul.team .blog--all ul.board li:nth-child(3) a h3:last-child, .about .hello ul.team .blog--all ul.board li:nth-child(3) a h3:last-child, .hello .blog--all ul.team li:nth-child(4) a h2:last-child, .blog--all .hello ul.team li:nth-child(4) a h2:last-child, .hello .blog--all .about ul.team ul.board li:nth-child(4) a h3:last-child, .blog--all .about .hello ul.team ul.board li:nth-child(4) a h3:last-child, .hello .about ul.team .blog--all ul.board li:nth-child(4) a h3:last-child, .about .hello ul.team .blog--all ul.board li:nth-child(4) a h3:last-child, .hello .blog--all ul.team li:nth-child(5) a h2:last-child, .blog--all .hello ul.team li:nth-child(5) a h2:last-child, .hello .blog--all .about ul.team ul.board li:nth-child(5) a h3:last-child, .blog--all .about .hello ul.team ul.board li:nth-child(5) a h3:last-child, .hello .about ul.team .blog--all ul.board li:nth-child(5) a h3:last-child, .about .hello ul.team .blog--all ul.board li:nth-child(5) a h3:last-child {
           margin-right: 0; }
@@ -586,7 +595,7 @@ footer {
         margin-right: 10.1484%;
         width: 100%;
         color: RGBA(102, 117, 127, 1);
-        font-size: 1em;
+        font-size: .9em;
         margin-bottom: 1.25em; }
         .hello ul.team li h2:last-child, .hello .about ul.team ul.board li h3:last-child, .about .hello ul.team ul.board li h3:last-child {
           margin-right: 0; }
@@ -815,6 +824,8 @@ footer {
         margin-right: 0; }
       .jobs .copy small a {
         color: #E34F50; }
+    .jobs .copy p a {
+      color: #E34F50; }
     .jobs .copy a.button {
       background: #E34F50;
       color: white;
@@ -1256,6 +1267,237 @@ footer {
       margin-right: 0; }
     .scheme .cta a.disabled {
       background: RGBA(102, 117, 127, 1); }
+
+.festival form input[type="submit"] {
+  padding: 1em;
+  float: left;
+  width: 50%;
+  margin-left: 25%; }
+
+.festival {
+  margin-bottom: 50px; }
+  .festival .image-row {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .festival .image-row:last-child {
+      margin-right: 0; }
+    .festival .image-row img {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .festival .image-row img:last-child {
+        margin-right: 0; }
+      .festival .image-row img:nth-child(3n) {
+        margin-right: 0; }
+      .festival .image-row img:nth-child(3n+1) {
+        clear: left; }
+  .festival ul li {
+    margin-bottom: 1em;
+    list-style-type: none; }
+    .festival ul li:before {
+      font-family: "FontAwesome";
+      margin-right: 1em;
+      content: "\f105" !important; }
+    .festival ul li:last-child {
+      margin-bottom: 2em; }
+  .festival .inner {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    .festival .inner:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 900px) {
+      .festival .inner {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-left: 0%; }
+        .festival .inner:last-child {
+          margin-right: 0; } }
+  .festival h2.register, .festival .about .team ul.board li h3.register, .about .team ul.board li .festival h3.register {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #E34F50;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em 0;
+    border-top: 5px solid #E34F50; }
+    .festival h2.register + p, .festival .about .team ul.board li h3.register + p, .about .team ul.board li .festival h3.register + p {
+      text-align: center; }
+  .festival form {
+    margin-top: 1em; }
+    .festival form .ss-form-entry {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      display: block;
+      overflow: auto; }
+      .festival form .ss-form-entry:last-child {
+        margin-right: 0; }
+    .festival form .required-message,
+    .festival form .error-message {
+      display: none; }
+    .festival form .ss-required-asterisk {
+      display: inline; }
+    .festival form .ss-form-question {
+      margin-bottom: 2em;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .festival form .ss-form-question:last-child {
+        margin-right: 0; }
+    .festival form .ss-q-title {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: .8em;
+      color: #444;
+      margin-bottom: .5em; }
+      .festival form .ss-q-title:last-child {
+        margin-right: 0; }
+    .festival form label[for="itemView.getDomIdToLabel()"] {
+      display: inline; }
+    .festival form input[type="text"], .festival form input[type="email"], .festival form input[type="password"], .festival form select, .festival form textarea {
+      border: 1px solid grey; }
+    .festival form input[type="text"]:focus, .festival form input[type="email"]:focus, .festival form input[type="password"]:focus, .festival form select:focus, .festival form textarea:focus {
+      outline: 0 !important;
+      border: 1px solid #E34F50; }
+    .festival form .note {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      float: left;
+      width: 100%;
+      margin-top: 1em; }
+      .festival form .note:last-child {
+        margin-right: 0; }
+    .festival form .note p {
+      margin-bottom: 0;
+      font-size: .8em;
+      background: #eee;
+      border-radius: 6px;
+      padding: 1em 1.5em;
+      color: #444;
+      margin-top: 1em;
+      float: left;
+      width: 100%; }
+      .festival form .note p:before {
+        content: "\f059";
+        font-family: "FontAwesome";
+        margin-right: 1em; }
+    .festival form ul.ss-choices {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      padding-left: 0; }
+      .festival form ul.ss-choices:last-child {
+        margin-right: 0; }
+    .festival form li.ss-choice-item {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-top: .5em; }
+      .festival form li.ss-choice-item:last-child {
+        margin-right: 0; }
+      .festival form li.ss-choice-item:nth-child(2n) {
+        margin-right: 0; }
+      .festival form li.ss-choice-item:nth-child(2n+1) {
+        clear: left; }
+      .festival form li.ss-choice-item label {
+        margin: 0;
+        margin-left: 2px;
+        font-weight: 300; }
+        .festival form li.ss-choice-item label .ss-choice-label {
+          margin-left: .5em;
+          font-size: .8em; }
+      .festival form li.ss-choice-item:before {
+        display: none; }
+      @media screen and (max-width: 900px) {
+        .festival form li.ss-choice-item {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .festival form li.ss-choice-item:last-child {
+            margin-right: 0; } }
+    .festival form table,
+    .festival form input[type="submit"] {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 25.58941%;
+      background: #E34F50;
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+      padding: .75em 1em; }
+      .festival form table:last-child,
+      .festival form input[type="submit"]:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 600px) {
+        .festival form table,
+        .festival form input[type="submit"] {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-left: 0%; }
+          .festival form table:last-child,
+          .festival form input[type="submit"]:last-child {
+            margin-right: 0; } }
+    .festival form .dropdown label {
+      font-size: .8em; }
+  .festival form input[type="text"],
+  .festival form input[type="email"],
+  .festival form input[type="password"],
+  .festival form input[type="date"],
+  .festival form input[type="number"],
+  .festival form select,
+  .festival form textarea {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    border: solid 1px #eee; }
+  .festival form input[type="text"]:focus,
+  .festival form input[type="email"]:focus,
+  .festival form input[type="password"]:focus,
+  .festival form select:focus,
+  .festival form textarea:focus {
+    border-color: #E34F50;
+    outline: 0; }
+  .festival form input[type="text"],
+  .festival form input[type="email"],
+  .festival form input[type="password"],
+  .festival form input[type="date"],
+  .festival form input[type="number"],
+  .festival form select {
+    line-height: 3em;
+    padding: 0 1em; }
+  .festival form textarea {
+    min-height: 9em;
+    padding: 1em; }
+  .festival .copy ul li:before {
+    content: ""; }
 
 .blog--all {
   max-width: 960px;
@@ -1804,5 +2046,175 @@ footer {
       width: 90vw;
       padding-left: 5vw;
       padding-right: 5vw; } }
+
+.hana img {
+  border-radius: 6px;
+  margin-bottom: 2em;
+  width: 100%; }
+.hana h1:not(.title), .hana .blog--all ul li:nth-child(1) a h2:not(.title), .blog--all ul li:nth-child(1) a .hana h2:not(.title), .hana .blog--all .about .team ul.board li:nth-child(1) a h3:not(.title), .blog--all .about .team ul.board li:nth-child(1) a .hana h3:not(.title), .hana .about .team .blog--all ul.board li:nth-child(1) a h3:not(.title), .about .team .blog--all ul.board li:nth-child(1) a .hana h3:not(.title), .hana .blog--all ul li:nth-child(2) a h2:not(.title), .blog--all ul li:nth-child(2) a .hana h2:not(.title), .hana .blog--all .about .team ul.board li:nth-child(2) a h3:not(.title), .blog--all .about .team ul.board li:nth-child(2) a .hana h3:not(.title), .hana .about .team .blog--all ul.board li:nth-child(2) a h3:not(.title), .about .team .blog--all ul.board li:nth-child(2) a .hana h3:not(.title), .hana .blog--all ul li:nth-child(3) a h2:not(.title), .blog--all ul li:nth-child(3) a .hana h2:not(.title), .hana .blog--all .about .team ul.board li:nth-child(3) a h3:not(.title), .blog--all .about .team ul.board li:nth-child(3) a .hana h3:not(.title), .hana .about .team .blog--all ul.board li:nth-child(3) a h3:not(.title), .about .team .blog--all ul.board li:nth-child(3) a .hana h3:not(.title), .hana .blog--all ul li:nth-child(4) a h2:not(.title), .blog--all ul li:nth-child(4) a .hana h2:not(.title), .hana .blog--all .about .team ul.board li:nth-child(4) a h3:not(.title), .blog--all .about .team ul.board li:nth-child(4) a .hana h3:not(.title), .hana .about .team .blog--all ul.board li:nth-child(4) a h3:not(.title), .about .team .blog--all ul.board li:nth-child(4) a .hana h3:not(.title), .hana .blog--all ul li:nth-child(5) a h2:not(.title), .blog--all ul li:nth-child(5) a .hana h2:not(.title), .hana .blog--all .about .team ul.board li:nth-child(5) a h3:not(.title), .blog--all .about .team ul.board li:nth-child(5) a .hana h3:not(.title), .hana .about .team .blog--all ul.board li:nth-child(5) a h3:not(.title), .about .team .blog--all ul.board li:nth-child(5) a .hana h3:not(.title) {
+  width: 100%;
+  background: #E34F50;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 1em;
+  border-radius: 6px;
+  font-size: 1.25em; }
+.hana .resources h1, .hana .resources .blog--all ul li:nth-child(1) a h2, .blog--all ul li:nth-child(1) a .hana .resources h2, .hana .resources .blog--all .about .team ul.board li:nth-child(1) a h3, .blog--all .about .team ul.board li:nth-child(1) a .hana .resources h3, .hana .resources .about .team .blog--all ul.board li:nth-child(1) a h3, .about .team .blog--all ul.board li:nth-child(1) a .hana .resources h3, .hana .resources .blog--all ul li:nth-child(2) a h2, .blog--all ul li:nth-child(2) a .hana .resources h2, .hana .resources .blog--all .about .team ul.board li:nth-child(2) a h3, .blog--all .about .team ul.board li:nth-child(2) a .hana .resources h3, .hana .resources .about .team .blog--all ul.board li:nth-child(2) a h3, .about .team .blog--all ul.board li:nth-child(2) a .hana .resources h3, .hana .resources .blog--all ul li:nth-child(3) a h2, .blog--all ul li:nth-child(3) a .hana .resources h2, .hana .resources .blog--all .about .team ul.board li:nth-child(3) a h3, .blog--all .about .team ul.board li:nth-child(3) a .hana .resources h3, .hana .resources .about .team .blog--all ul.board li:nth-child(3) a h3, .about .team .blog--all ul.board li:nth-child(3) a .hana .resources h3, .hana .resources .blog--all ul li:nth-child(4) a h2, .blog--all ul li:nth-child(4) a .hana .resources h2, .hana .resources .blog--all .about .team ul.board li:nth-child(4) a h3, .blog--all .about .team ul.board li:nth-child(4) a .hana .resources h3, .hana .resources .about .team .blog--all ul.board li:nth-child(4) a h3, .about .team .blog--all ul.board li:nth-child(4) a .hana .resources h3, .hana .resources .blog--all ul li:nth-child(5) a h2, .blog--all ul li:nth-child(5) a .hana .resources h2, .hana .resources .blog--all .about .team ul.board li:nth-child(5) a h3, .blog--all .about .team ul.board li:nth-child(5) a .hana .resources h3, .hana .resources .about .team .blog--all ul.board li:nth-child(5) a h3, .about .team .blog--all ul.board li:nth-child(5) a .hana .resources h3 {
+  margin-bottom: 1em; }
+.hana .resources ul {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .hana .resources ul:last-child {
+    margin-right: 0; }
+  .hana .resources ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .hana .resources ul li:last-child {
+      margin-right: 0; }
+    .hana .resources ul li:nth-child(3n) {
+      margin-right: 0; }
+    .hana .resources ul li iframe {
+      width: 100% !important;
+      height: 60% !important; }
+    .hana .resources ul li .meta {
+      display: none; }
+.hana .data {
+  display: inline-block;
+  margin-top: 2em; }
+  .hana .data ul {
+    margin-bottom: 2em; }
+    .hana .data ul li {
+      list-style-type: none;
+      margin-top: 2em; }
+      .hana .data ul li:before {
+        content: "\f105";
+        font-family: "FontAwesome"; }
+      .hana .data ul li h2, .hana .data .about .team ul.board li h3, .about .team .hana .data ul.board li h3 {
+        font-size: 1em;
+        font-weight: normal;
+        display: inline;
+        margin-left: 1rem; }
+        .hana .data ul li h2 a, .hana .data .about .team ul.board li h3 a, .about .team .hana .data ul.board li h3 a {
+          color: #E34F50; }
+      .hana .data ul li p {
+        font-style: italic;
+        color: #696969;
+        margin-left: 1.7rem;
+        margin-top: .5em;
+        margin-bottom: 0; }
+.hana .events ul {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .hana .events ul:last-child {
+    margin-right: 0; }
+  .hana .events ul li.confirmed {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-bottom: 2.5%; }
+    .hana .events ul li.confirmed:last-child {
+      margin-right: 0; }
+    .hana .events ul li.confirmed:nth-child(3n) {
+      margin-right: 0; }
+    .hana .events ul li.confirmed:nth-child(3n+1) {
+      clear: left; }
+    .hana .events ul li.confirmed a {
+      display: block;
+      color: white;
+      padding: 1.5em;
+      background: #E34F50;
+      text-align: center;
+      border-radius: 6px; }
+      .hana .events ul li.confirmed a h2, .hana .events .about .team ul.board li.confirmed a h3, .about .team .hana .events ul.board li.confirmed a h3 {
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 1.25em; }
+      .hana .events ul li.confirmed a h3 {
+        margin-top: .5em;
+        margin-bottom: .5em; }
+      .hana .events ul li.confirmed a p {
+        margin-bottom: 0;
+        font-size: .8em; }
+  .hana .events ul li.tbc {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    background: RGBA(102, 117, 127, 1);
+    border-radius: 6px;
+    padding: 1.5em;
+    color: white;
+    text-align: center;
+    margin-top: 2.35765%; }
+    .hana .events ul li.tbc:last-child {
+      margin-right: 0; }
+    .hana .events ul li.tbc:nth-child(3n) {
+      margin-right: 0; }
+    .hana .events ul li.tbc:nth-child(3n+1) {
+      clear: left; }
+    .hana .events ul li.tbc h2, .hana .events .about .team ul.board li.tbc h3, .about .team .hana .events ul.board li.tbc h3,
+    .hana .events ul li.tbc h3 {
+      display: inline;
+      font-size: 1em; }
+    .hana .events ul li.tbc h2, .hana .events .about .team ul.board li.tbc h3, .about .team .hana .events ul.board li.tbc h3 {
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-right: 1em; }
+.hana .draw h1, .hana .draw .blog--all ul li:nth-child(1) a h2, .blog--all ul li:nth-child(1) a .hana .draw h2, .hana .draw .blog--all .about .team ul.board li:nth-child(1) a h3, .blog--all .about .team ul.board li:nth-child(1) a .hana .draw h3, .hana .draw .about .team .blog--all ul.board li:nth-child(1) a h3, .about .team .blog--all ul.board li:nth-child(1) a .hana .draw h3, .hana .draw .blog--all ul li:nth-child(2) a h2, .blog--all ul li:nth-child(2) a .hana .draw h2, .hana .draw .blog--all .about .team ul.board li:nth-child(2) a h3, .blog--all .about .team ul.board li:nth-child(2) a .hana .draw h3, .hana .draw .about .team .blog--all ul.board li:nth-child(2) a h3, .about .team .blog--all ul.board li:nth-child(2) a .hana .draw h3, .hana .draw .blog--all ul li:nth-child(3) a h2, .blog--all ul li:nth-child(3) a .hana .draw h2, .hana .draw .blog--all .about .team ul.board li:nth-child(3) a h3, .blog--all .about .team ul.board li:nth-child(3) a .hana .draw h3, .hana .draw .about .team .blog--all ul.board li:nth-child(3) a h3, .about .team .blog--all ul.board li:nth-child(3) a .hana .draw h3, .hana .draw .blog--all ul li:nth-child(4) a h2, .blog--all ul li:nth-child(4) a .hana .draw h2, .hana .draw .blog--all .about .team ul.board li:nth-child(4) a h3, .blog--all .about .team ul.board li:nth-child(4) a .hana .draw h3, .hana .draw .about .team .blog--all ul.board li:nth-child(4) a h3, .about .team .blog--all ul.board li:nth-child(4) a .hana .draw h3, .hana .draw .blog--all ul li:nth-child(5) a h2, .blog--all ul li:nth-child(5) a .hana .draw h2, .hana .draw .blog--all .about .team ul.board li:nth-child(5) a h3, .blog--all .about .team ul.board li:nth-child(5) a .hana .draw h3, .hana .draw .about .team .blog--all ul.board li:nth-child(5) a h3, .about .team .blog--all ul.board li:nth-child(5) a .hana .draw h3 {
+  display: inline-block;
+  margin-top: 2em;
+  margin-bottom: 1em; }
+.hana .draw ul {
+  margin-bottom: 2em; }
+  .hana .draw ul li {
+    list-style-type: none;
+    margin-top: 2em; }
+    .hana .draw ul li:before {
+      content: "\f105";
+      font-family: "FontAwesome";
+      margin-right: 1em; }
+
+@media screen and (max-width: 900px) {
+  .hana {
+    padding-left: 0;
+    padding-right: 0; }
+    .hana .resources ul li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .hana .resources ul li:last-child {
+        margin-right: 0; }
+      .hana .resources ul li iframe {
+        display: none; }
+      .hana .resources ul li .meta {
+        display: block;
+        margin-top: 2em; }
+        .hana .resources ul li .meta:before {
+          content: "\f105";
+          font-family: "FontAwesome";
+          margin-right: 1em; }
+    .hana .events ul li.confirmed,
+    .hana .events ul li.tbc {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .hana .events ul li.confirmed:last-child,
+      .hana .events ul li.tbc:last-child {
+        margin-right: 0; }
+    .hana .events ul li.confirmed {
+      margin-bottom: 1em; }
+      .hana .events ul li.confirmed:last-child {
+        margin-bottom: 0; } }
 
 /*# sourceMappingURL=main.css.map */
