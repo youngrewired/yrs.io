@@ -386,6 +386,9 @@ footer {
           .about .team ul.board li:nth-child(3), .about .team ul.board li:nth-child(4) {
             background: #F9CD1D; }
 
+.hello .copy p {
+  margin-bottom: 0; }
+
 .start {
   max-width: 960px;
   margin-left: auto;
@@ -543,9 +546,17 @@ footer {
 .hello {
   margin-bottom: 50px; }
   .hello .copy {
-    margin-bottom: 50px; }
+    margin-bottom: 1em; }
     .hello .copy p {
-      margin-bottom: 2em; }
+      margin-bottom: 1em; }
+    .hello .copy ul li {
+      margin-top: .5em;
+      margin-bottom: 1em;
+      list-style-type: none; }
+      .hello .copy ul li:before {
+        content: "\f105";
+        font-family: "FontAwesome";
+        margin-right: 1em; }
   .hello ul.team {
     max-width: 960px;
     margin-left: auto;
@@ -2074,16 +2085,78 @@ footer {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
+    width: 48.82117%;
+    height: 270px;
+    margin-bottom: 2.5%; }
     .hana .resources ul li:last-child {
       margin-right: 0; }
-    .hana .resources ul li:nth-child(3n) {
+    .hana .resources ul li:nth-child(2n) {
       margin-right: 0; }
     .hana .resources ul li iframe {
       width: 100% !important;
-      height: 60% !important; }
+      height: 100% !important; }
     .hana .resources ul li .meta {
       display: none; }
+.hana .criteria h1, .hana .criteria .blog--all ul li:nth-child(1) a h2, .blog--all ul li:nth-child(1) a .hana .criteria h2, .hana .criteria .blog--all .about .team ul.board li:nth-child(1) a h3, .blog--all .about .team ul.board li:nth-child(1) a .hana .criteria h3, .hana .criteria .about .team .blog--all ul.board li:nth-child(1) a h3, .about .team .blog--all ul.board li:nth-child(1) a .hana .criteria h3, .hana .criteria .blog--all ul li:nth-child(2) a h2, .blog--all ul li:nth-child(2) a .hana .criteria h2, .hana .criteria .blog--all .about .team ul.board li:nth-child(2) a h3, .blog--all .about .team ul.board li:nth-child(2) a .hana .criteria h3, .hana .criteria .about .team .blog--all ul.board li:nth-child(2) a h3, .about .team .blog--all ul.board li:nth-child(2) a .hana .criteria h3, .hana .criteria .blog--all ul li:nth-child(3) a h2, .blog--all ul li:nth-child(3) a .hana .criteria h2, .hana .criteria .blog--all .about .team ul.board li:nth-child(3) a h3, .blog--all .about .team ul.board li:nth-child(3) a .hana .criteria h3, .hana .criteria .about .team .blog--all ul.board li:nth-child(3) a h3, .about .team .blog--all ul.board li:nth-child(3) a .hana .criteria h3, .hana .criteria .blog--all ul li:nth-child(4) a h2, .blog--all ul li:nth-child(4) a .hana .criteria h2, .hana .criteria .blog--all .about .team ul.board li:nth-child(4) a h3, .blog--all .about .team ul.board li:nth-child(4) a .hana .criteria h3, .hana .criteria .about .team .blog--all ul.board li:nth-child(4) a h3, .about .team .blog--all ul.board li:nth-child(4) a .hana .criteria h3, .hana .criteria .blog--all ul li:nth-child(5) a h2, .blog--all ul li:nth-child(5) a .hana .criteria h2, .hana .criteria .blog--all .about .team ul.board li:nth-child(5) a h3, .blog--all .about .team ul.board li:nth-child(5) a .hana .criteria h3, .hana .criteria .about .team .blog--all ul.board li:nth-child(5) a h3, .about .team .blog--all ul.board li:nth-child(5) a .hana .criteria h3 {
+  display: inline-block;
+  margin-top: 2em;
+  margin-bottom: 1em; }
+.hana .criteria ul {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .hana .criteria ul:last-child {
+    margin-right: 0; }
+  .hana .criteria ul:nth-child(3n) {
+    margin-right: 0; }
+  .hana .criteria ul:nth-child(3n+1) {
+    clear: left; }
+  .hana .criteria ul p {
+    margin-bottom: 0; }
+  .hana .criteria ul li {
+    margin-top: .5em;
+    list-style-type: none; }
+    .hana .criteria ul li:before {
+      content: "\f105";
+      font-family: "FontAwesome";
+      margin-right: 1em; }
+.hana .criteria ul.support {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 2em; }
+  .hana .criteria ul.support:last-child {
+    margin-right: 0; }
+  .hana .criteria ul.support li:before {
+    display: none; }
+  .hana .criteria ul.support li a {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    background: #E6E6E6;
+    padding: 1em;
+    border-radius: 6px; }
+    .hana .criteria ul.support li a:last-child {
+      margin-right: 0; }
+    .hana .criteria ul.support li a p {
+      color: black;
+      margin-bottom: 0;
+      text-align: center; }
+      .hana .criteria ul.support li a p strong {
+        display: block;
+        color: #E34F50;
+        font-weight: 800;
+        font-size: 2em;
+        margin-top: 0; }
+    .hana .criteria ul.support li a:hover {
+      background: #CFCFCF; }
+    .hana .criteria ul.support li a:last-child {
+      margin-right: 2.35765%; }
+  .hana .criteria ul.support li:nth-child(3) a {
+    margin-right: 0; }
 .hana .data {
   display: inline-block;
   margin-top: 2em; }
@@ -2182,6 +2255,165 @@ footer {
       content: "\f105";
       font-family: "FontAwesome";
       margin-right: 1em; }
+.hana form {
+  margin-top: 1em; }
+  .hana form .ss-form-entry {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    display: block;
+    overflow: auto; }
+    .hana form .ss-form-entry:last-child {
+      margin-right: 0; }
+  .hana form .required-message,
+  .hana form .error-message {
+    display: none; }
+  .hana form .ss-required-asterisk {
+    display: inline; }
+  .hana form .ss-form-question {
+    margin-bottom: 2em;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .hana form .ss-form-question:last-child {
+      margin-right: 0; }
+  .hana form .ss-q-title {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8em;
+    color: #444;
+    margin-bottom: .5em; }
+    .hana form .ss-q-title:last-child {
+      margin-right: 0; }
+  .hana form label[for="itemView.getDomIdToLabel()"] {
+    display: inline; }
+  .hana form input[type="text"], .hana form input[type="email"], .hana form input[type="password"], .hana form select, .hana form textarea {
+    border: 1px solid grey; }
+  .hana form input[type="text"]:focus, .hana form input[type="email"]:focus, .hana form input[type="password"]:focus, .hana form select:focus, .hana form textarea:focus {
+    outline: 0 !important;
+    border: 1px solid #E34F50; }
+  .hana form input[type="text"] + span {
+    display: none; }
+  .hana form .note {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    float: left;
+    width: 100%;
+    margin-top: 1em; }
+    .hana form .note:last-child {
+      margin-right: 0; }
+  .hana form .note p {
+    margin-bottom: 0;
+    font-size: .8em;
+    background: #eee;
+    border-radius: 6px;
+    padding: 1em 1.5em;
+    color: #444;
+    margin-top: 1em;
+    float: left;
+    width: 100%; }
+    .hana form .note p:before {
+      content: "\f059";
+      font-family: "FontAwesome";
+      margin-right: 1em; }
+  .hana form ul.ss-choices {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding-left: 0; }
+    .hana form ul.ss-choices:last-child {
+      margin-right: 0; }
+  .hana form li.ss-choice-item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-top: .5em; }
+    .hana form li.ss-choice-item:last-child {
+      margin-right: 0; }
+    .hana form li.ss-choice-item:nth-child(2n) {
+      margin-right: 0; }
+    .hana form li.ss-choice-item:nth-child(2n+1) {
+      clear: left; }
+    .hana form li.ss-choice-item label {
+      margin: 0;
+      margin-left: 2px;
+      font-weight: 300; }
+      .hana form li.ss-choice-item label .ss-choice-label {
+        margin-left: .5em;
+        font-size: .8em; }
+    .hana form li.ss-choice-item:before {
+      display: none; }
+    @media screen and (max-width: 900px) {
+      .hana form li.ss-choice-item {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .hana form li.ss-choice-item:last-child {
+          margin-right: 0; } }
+  .hana form table,
+  .hana form input[type="submit"] {
+    width: 50%;
+    display: block;
+    margin: 2em auto 5em auto;
+    background: #E34F50;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: .75em 1em; }
+    @media screen and (max-width: 600px) {
+      .hana form table,
+      .hana form input[type="submit"] {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-left: 0%; }
+        .hana form table:last-child,
+        .hana form input[type="submit"]:last-child {
+          margin-right: 0; } }
+  .hana form .dropdown label {
+    font-size: .8em; }
+.hana form input[type="text"],
+.hana form input[type="email"],
+.hana form input[type="password"],
+.hana form input[type="date"],
+.hana form input[type="number"],
+.hana form select,
+.hana form textarea {
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  border: solid 1px #eee; }
+.hana form input[type="text"]:focus,
+.hana form input[type="email"]:focus,
+.hana form input[type="password"]:focus,
+.hana form select:focus,
+.hana form textarea:focus {
+  border-color: #E34F50;
+  outline: 0; }
+.hana form input[type="text"],
+.hana form input[type="email"],
+.hana form input[type="password"],
+.hana form input[type="date"],
+.hana form input[type="number"],
+.hana form select {
+  line-height: 3em;
+  padding: 0 1em; }
+.hana form textarea {
+  min-height: 9em;
+  padding: 1em; }
 
 @media screen and (max-width: 900px) {
   .hana {
@@ -2191,7 +2423,8 @@ footer {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%; }
+      width: 100%;
+      height: 5em; }
       .hana .resources ul li:last-child {
         margin-right: 0; }
       .hana .resources ul li iframe {
@@ -2203,6 +2436,20 @@ footer {
           content: "\f105";
           font-family: "FontAwesome";
           margin-right: 1em; }
+    .hana .criteria ul:not(.support) {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 0%;
+      margin-top: 1em; }
+      .hana .criteria ul:not(.support):last-child {
+        margin-right: 0; }
+    .hana .criteria ul.support li a {
+      width: 100%;
+      display: block;
+      margin-right: 0;
+      margin-top: 1em; }
     .hana .events ul li.confirmed,
     .hana .events ul li.tbc {
       float: left;

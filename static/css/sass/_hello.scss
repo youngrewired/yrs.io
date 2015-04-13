@@ -1,9 +1,21 @@
 .hello {
 	margin-bottom: 50px;
 	.copy {
-		margin-bottom: 50px;
+		margin-bottom: 1em;
 		p {
-			margin-bottom: 2em;
+			margin-bottom: 1em;
+		}
+		ul {
+			li {
+				margin-top: .5em;
+				margin-bottom: 1em;
+				list-style-type: none;
+				&:before {
+					content: "\f105";
+					font-family: "FontAwesome";
+					margin-right: 1em;
+				}
+			}
 		}
 	}
 	ul.team {

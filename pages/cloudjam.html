@@ -1,5 +1,5 @@
 {% extends "templates/partials/base.html" %}
-{% block title %}{% parent %} - Everywhere{% endblock %}
+{% block title %}{% parent %} - CloudJam{% endblock %}
 {% block content %}
   
   <div class="scheme hana wrapper">
@@ -26,6 +26,19 @@
                 <a href="{{resource.video.original_url}}">{{resource.video.title}}</a>
               </div>
             </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="criteria">
+        <h1>Rules & Support</h1>
+        {{cms.hanahack.criteria|safe}}
+        <ul class="support">
+          {% for channel in cms.hanahack.support %}
+            <li>
+              <a href="{{channel.url}}">
+                {{channel.copy|safe}}
+              </a>
+            </li> 
           {% endfor %}
         </ul>
       </div>

@@ -1,4 +1,4 @@
-$resource-row: 3;
+$resource-row: 2;
 
 .hana {
 	img {
@@ -26,12 +26,73 @@ $resource-row: 3;
 			li {
 				@include span-columns(12 / $resource-row);
 				@include omega(#{$resource-row}n);
+				height: 270px;
+				margin-bottom: 2.5%;
 				iframe {
 					width: 100% !important;
-					height: 60% !important;
+					height: 100% !important; 
 				}
 				.meta {
 					display: none;
+				}
+			}
+		}
+	}
+	.criteria {
+		h1 {
+			display: inline-block;
+			margin-top: 2em;
+			margin-bottom: 1em;
+		}
+		ul {
+			@include span-columns(6 of 12);
+			@include omega(2n + 1);
+			p {
+				margin-bottom: 0; 
+			}
+			li {
+				margin-top: .5em;
+				list-style-type: none;
+				&:before {
+					content: "\f105";
+					font-family: "FontAwesome";
+					margin-right: 1em;
+				}
+			}
+		}
+		ul.support {
+			@include span-columns(12);
+			margin-top: 2em;
+			li {
+				&:before {
+					display: none;
+				}
+				a {
+					@include span-columns(4 of 12);
+					background: #E6E6E6;
+					padding: 1em;
+					border-radius: 6px;
+					p {
+						color: black;
+						margin-bottom: 0;
+						text-align: center;
+						strong {
+							display: block;
+							color: $color--red;
+							font-weight: 800;
+							font-size: 2em;
+							margin-top: 0;
+						}
+					}
+					&:hover {
+						background: #CFCFCF;
+					}
+					&:last-child {
+						margin-right: 2.35765%;
+					}
+				}
+				&:nth-child(3) a {
+					@include omega;
 				}
 			}
 		}
@@ -137,6 +198,153 @@ $resource-row: 3;
 			}
 		}
 	}
+	form {
+		margin-top: 1em;
+		.ss-form-entry {
+			@include span-columns(12);
+			display: block;
+			overflow: auto;
+		}
+		.required-message,
+		.error-message {
+			display: none;
+		}
+		.ss-required-asterisk {
+			display: inline;
+		}
+		.ss-form-question {
+			margin-bottom: 2em;
+			@include span-columns(12);
+		}
+
+		.ss-q-title {
+			@include span-columns(12);
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: .8em;
+			color: #444;
+			margin-bottom: .5em;
+		}
+		label[for="itemView.getDomIdToLabel()"] {
+			display: inline;
+		}
+	 	input[type="text"], input[type="email"], input[type="password"], select, textarea {
+			border: 1px solid grey;
+		}
+	 	input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus, textarea:focus {
+			outline: 0 !important;
+			border: 1px solid $color--red;
+		}
+		input[type="text"] + span {
+			display: none;
+		}
+		.note {
+			@include span-columns(12);
+			float: left;
+			width: 100%;
+			margin-top:1em;
+		}
+		.note p {
+			margin-bottom: 0;
+			font-size: .8em;
+			background: #eee;
+			border-radius: 6px;
+			padding: 1em 1.5em;
+			color: #444;
+			margin-top: 1em; 
+			float: left;
+			width: 100%;
+			&:before {
+				content: "\f059";
+				font-family: "FontAwesome";
+				margin-right: 1em;
+			}
+		}
+		ul.ss-choices {
+			@include span-columns(12);
+			padding-left: 0;
+		}
+		li.ss-choice-item {
+			@include span-columns(6 of 12);
+			@include omega(2n);
+			margin-top: .5em;
+			label {
+				margin: 0;
+				margin-left: 2px;
+				font-weight: 300;
+				.ss-choice-label {
+					margin-left: .5em;
+					font-size: .8em;
+				}
+			}
+			&:before {
+				display: none;
+			}
+			@media screen and (max-width: 900px) {
+				@include span-columns(12 of 12);
+			}
+		}
+		table,
+		input[type="submit"] {
+			width: 50%;
+			display: block;
+			margin: 2em auto 5em auto;
+			background: $color--red;
+			color: white;
+			text-align: center;
+			border-radius: 6px;
+			padding: .75em 1em;
+			@media screen and (max-width: 600px) {
+				@include span-columns(12);
+				@include shift(0);
+			}
+		}
+		.dropdown label {
+			font-size: .8em;
+		}
+	}
+
+	form input[type="text"],
+			form input[type="email"],
+			form input[type="password"],
+			form input[type="date"],
+			form input[type="number"],
+			form select,
+			form textarea
+			{
+				-webkit-appearance: none;
+				display: block;
+				width: 100%;
+				border-radius: 6px;
+				border: solid 1px #eee;
+			}
+
+				form input[type="text"]:focus,
+				form input[type="email"]:focus,
+				form input[type="password"]:focus,
+				form select:focus,
+				form textarea:focus
+				{
+					border-color: #E34F50;
+					outline: 0;
+				}
+
+			form input[type="text"],
+			form input[type="email"],
+			form input[type="password"],
+			form input[type="date"],
+			form input[type="number"],
+			form select
+			{
+				line-height: 3em;
+				padding: 0 1em;
+			}
+
+			form textarea
+			{
+				min-height: 9em;
+				padding: 1em;
+			}
 }
 
 @media screen and (max-width: 900px) {
@@ -145,6 +353,7 @@ $resource-row: 3;
 		padding-right: 0;
 		.resources ul li {
 			@include span-columns(12);
+			height: 5em;
 			iframe {
 				display: none;
 			}
@@ -156,6 +365,19 @@ $resource-row: 3;
 					font-family: "FontAwesome";
 					margin-right: 1em;
 				}
+			}
+		}
+		.criteria {
+			ul:not(.support) {
+				@include span-columns(12);
+				@include shift(0);
+				margin-top: 1em;
+			}
+			ul.support li a  {
+				width: 100%;
+				display: block;
+				margin-right: 0;
+				margin-top: 1em;
 			}
 		}
 		.events ul {
