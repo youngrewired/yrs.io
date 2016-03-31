@@ -1,0 +1,10 @@
+{
+  "name": "yrs.io",
+  "description": "Official website for Young Rewired State",
+  "dependencies": {
+    "css-pipeline": "0.3.x",
+    "js-pipeline": "0.2.x",
+    "node-sass": "3.x",
+    "jade": "1.x"
+  }
+}

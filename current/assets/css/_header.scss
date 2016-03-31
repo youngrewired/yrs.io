@@ -1,0 +1,59 @@
+header {
+	background-image: url("../img/background.png");
+	background-size: cover;
+	background-position: center center;
+	height: 450px;
+	#container {
+		width: 100%;
+		height: 100%;
+		background-color: rgba($yrs, 0.8);
+		#wrap {
+			max-width: 100%;
+			height: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 50px;
+			img {
+				max-height: 75%;
+			}
+			h2 {
+				color: white;
+				font-weight: normal;
+				margin: 15px 0px;
+			}
+			#mc_embed_signup {
+				width: 100%;
+				form {
+					#mc_embed_signup_scroll {
+						display: flex;
+						.mc-field-group {
+							flex: 1;
+							input {
+								width: 100%;
+								padding: 10px;
+								border-radius: 5px;
+								font-size: 14pt;
+								color: $yrs;
+								outline: none;
+								border: none;
+							}
+						}
+						.clear {
+							.button {
+								background-color: white;
+								border: none;
+								padding: 10px 20px;
+								font-size: 14pt;
+								border-radius: 5px;
+								margin-left: 10px;
+								color: $yrs;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

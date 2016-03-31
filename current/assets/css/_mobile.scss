@@ -1,0 +1,27 @@
+@media screen and (max-width: 700px) {
+	#letter {
+		margin: 0px 30px 30px;
+	}
+
+	#wrap {
+		padding: 50px 30px !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#wrap {
+		h2 {
+			font-size: 4vw;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#letter {
+		margin: 0px 10px 10px;
+	}
+
+	#wrap {
+		padding: 50px 10px !important;
+	}
+}
