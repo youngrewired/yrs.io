@@ -16,7 +16,8 @@ header {
 			flex-direction: column;
 			padding: 50px;
 			img {
-				max-height: 75%;
+				max-height: 125px;
+				display: block;
 			}
 			h2 {
 				color: white;
@@ -25,6 +26,8 @@ header {
 			}
 			#mc_embed_signup {
 				width: 100%;
+				max-width: 1200px;
+				margin: 0 auto;
 				form {
 					#mc_embed_signup_scroll {
 						display: flex;
@@ -49,6 +52,8 @@ header {
 								border-radius: 5px;
 								margin-left: 10px;
 								color: $yrs;
+								cursor: pointer;
+								outline: none;
 							}
 						}
 					}
