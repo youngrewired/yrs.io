@@ -25,13 +25,16 @@ header {
       flex-direction: column;
       padding: 50px; }
       header #container #wrap img {
-        max-height: 75%; }
+        max-height: 125px;
+        display: block; }
       header #container #wrap h2 {
         color: white;
         font-weight: normal;
         margin: 15px 0px; }
       header #container #wrap #mc_embed_signup {
-        width: 100%; }
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto; }
         header #container #wrap #mc_embed_signup form #mc_embed_signup_scroll {
           display: flex; }
           header #container #wrap #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group {
@@ -51,18 +54,18 @@ header {
             font-size: 14pt;
             border-radius: 5px;
             margin-left: 10px;
-            color: #e34f50; }
+            color: #e34f50;
+            cursor: pointer;
+            outline: none; }
 
 #letter {
   position: relative;
   top: -150px;
   background-color: white;
   margin: 0px 50px 50px;
-  box-sizing: content-box;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  max-width: 1200px;
-  overflow-y: scroll; }
+  max-width: 1200px; }
   #letter h1 {
     color: #e34f50;
     font-size: 24pt;
@@ -80,6 +83,10 @@ header {
   #letter h4 {
     font-weight: normal; }
 
+@media screen and (min-width: 1301px) {
+  #letter {
+    margin: 0 auto 50px; } }
+
 @media screen and (max-width: 700px) {
   #letter {
     margin: 0px 30px 30px; }
@@ -88,7 +95,7 @@ header {
 
 @media screen and (max-width: 600px) {
   #wrap h2 {
-    font-size: 4vw; } }
+    font-size: 3.8vw; } }
 
 @media screen and (max-width: 500px) {
   #letter {
